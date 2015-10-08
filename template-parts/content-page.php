@@ -1,0 +1,64 @@
+<?php
+/**
+ * Template part for displaying page content in page.php.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package MCU
+ */
+
+?>
+<div id="tmpl-interior" class="tmpl-wrap clearfix">
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<div class="contained">
+    	<div class="copy-wrap">
+            <div class="breadcrumbs"></div>
+      </div>
+    		<div id="pods-none-hank-13" class="pods-none-hank clearfix">
+					  <div class="contained">
+				    	<div class="hidden-hank"><img src="/wp-content/uploads/static/hiddenHank.png" /></div><!--/hidden-hank-->
+				    </div>
+						<div id="hank-expand"><img src="/wp-content/uploads/static/hank-tips/Hank-Tips_21.jpg" /></div>
+				</div><!--/ pods-none-hank-13 -->
+				<div id="pods-features-interior-intro-81" class="pods-features-interior-intro clearfix">
+				    <div class="white-top">
+				    	<div class="contain">
+
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+				        </div>
+				    </div>
+       </div><!--/ pods-features-interior-intro-81 -->
+
+
+
+    </div>
+	</header><!-- .entry-header -->
+
+<div class="copy-wrap" style="background-color:#eaeaea">
+	<div class="pods-features-interior-main clearfix">
+	<div class="contain">
+				<?php the_content(); ?>
+			<?php
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mcu' ),
+					'after'  => '</div>',
+				) );
+			?>
+
+
+			<footer class="entry-footer">
+				<?php edit_post_link( esc_html__( 'Edit', 'mcu' ), '<span class="edit-link">', '</span>' ); ?>
+			</footer><!-- .entry-footer -->
+	</div>
+	<div class="pods-none-right-column clearfix widget-area">
+	<?php get_sidebar(); ?>
+  </div>
+</div>
+<div style="clear:both;"></div>
+</div>
+
+
+</article><!-- #post-## -->
