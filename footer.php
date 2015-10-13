@@ -21,7 +21,7 @@
 	<li><a href="contact-mcu">Contact MCU</a></li>
 	<li><a href="careers">Careers</a></li>
 	<li><a title="Policies and Disclosures" href="policies-and-disclosures">Policies and Disclosures</a></li>
-	<li><a href="site-map">Site Map</a></li>
+
 	</ul>
 	<ul class="security">
 	<li class="title"><a href="banking-security">Security</a></li>
@@ -31,7 +31,7 @@
 	</ul>
 	<div class="foot-rt">
 	<p>&copy; Copyright 2015. Missouri Credit Union. All Rights Reserved.</p>
-	<p>&nbsp;<img src="/wp-content/uploads/static//ncua.png" alt="" />&nbsp; <img class="mid-logo" src="/wp-content/uploads/static/esi_logo.png" alt="" /> <img src="/wp-content/uploads/static//ehl_logo.png" alt="" /></p>
+	<p>&nbsp;<img src="/wp-content/uploads/static/ncua.png" alt="" />&nbsp; <img class="mid-logo" src="/wp-content/uploads/static/esi_logo.png" alt="" /> <img src="/wp-content/uploads/static/ehl_logo.png" alt="" /></p>
 	<p>This credit union is federally insured by the National Credit Union Administration.</p>
 	</div>
 

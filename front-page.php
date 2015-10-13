@@ -22,7 +22,7 @@ get_header(); ?>
     	<div class='copy-wrap'>
             <div class="three-col">
                 <div id="pods-features-homepromo-1" class="pods-features-homepromo clearfix">
-    <p><a href="http://mutigers.com/sports/2015/8/24/SackHunger.aspx"><img src="_img/content/leaderboards/sack-hunger.png" alt="Sack Hunger program logo" width="340" height="270" /></a><img src="_img/content/leaderboards/MCU_Leaderboard_340x270_BWConstruction.png" alt="Notification of temporary closure for Buttonwood branch on August 3" width="340" height="270" /><a href="http://www.amazon.com/gp/product/B0115SUHBW"><img src="_img/content/leaderboards/MCU_Leaderboard_340x270_Amazon.png" alt="Amazon mobile banking app logo" width="340" height="270" /></a></p>
+    <p><a href="banking-security"><img src="/wp-content/uploads/static/content/leaderboards/Debit_Fraud_PIN.png" alt="Debit card fraud warning for New York and Texas" width="340" height="270" /></a><img src="/wp-content/uploads/static/content/leaderboards/MCU_Leaderboard_340x270_BWConstruction.png" alt="Notification of temporary closure for Buttonwood branch on August 3" width="340" height="270" /><a href="http://www.amazon.com/gp/product/B0115SUHBW"><img src="/wp-content/uploads/static/content/leaderboards/MCU_Leaderboard_340x270_Amazon.png" alt="Amazon mobile banking app logo" width="340" height="270" /></a></p>
 
 </div><!--/ pods-features-homepromo-1 -->
             </div><!--/three-colo-->
