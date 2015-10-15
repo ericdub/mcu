@@ -100,7 +100,7 @@ if (is_front_page ()) {
                     </div>
                  </div>
                  <div id="search">
-                 	<form name="" action="<?php echo home_url( '/' ); ?>" method="get">
+                 	<form name="search" action="<?php echo home_url( '/' ); ?>" method="get">
                         <input type="text" name="s" value="" size="40" class="srch-fld" placeholder="Search">
                         <input type="submit" value="" class="srch-sbmt-btn">
                     </form>

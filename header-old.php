@@ -61,7 +61,7 @@
                     	<a href="https://chat.missouricu.org:8443/ECCChat/chat.html" title="Live Chat" target="_blank"><div class="social live"></div></a>
                         <a href="https://www.facebook.com/MissouriCreditUnion" title="Find us on Facebook" target="_blank"><div class="social facebook">&nbsp;</div></a>
                         <a href="https://www.youtube.com/user/missouricreditunion"title="Check us out on YouTube" target="_blank"><div class="social youtube">&nbsp;</div></a>
-                        <a href="https://missouricu.wordpress.com/" title="Heads & Tails Blog" target="_blank"><div class="social blog">&nbsp;</div></a>
+                        <a href="https://missouricu.wordpress.com/" title="Heads &amp; Tails Blog" target="_blank"><div class="social blog">&nbsp;</div></a>
                     </div>
                  </div>
 
