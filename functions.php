@@ -134,7 +134,11 @@ function remove_wp_archives(){
 function mcu_scripts() {
 
 	wp_enqueue_style( 'mcu-style', get_stylesheet_uri() );
-  if (is_page( array (22,155))) {
+	/**
+	 * Enqueue scripts and styles for loan apps.
+	 */
+  if (is_page( array (22,155,482))) {
+		remove_filter ('the_content',  'wpautop');
     wp_enqueue_style( 'form-styles', get_template_directory_uri() . '/forms.css' );
 		wp_register_script('popup-js', get_template_directory_uri() . '/js/popup.js', false, '1.0', true );
 		wp_enqueue_script('popup-js');
