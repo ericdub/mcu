@@ -18,16 +18,16 @@
 	    	<div id="pods-features-footer-nav-89" class="pods-features-footer-nav clearfix">
 
 	    <ul>
-	<li><a href="contact-mcu">Contact MCU</a></li>
-	<li><a href="careers">Careers</a></li>
-	<li><a title="Policies and Disclosures" href="policies-and-disclosures">Policies and Disclosures</a></li>
+	<li><a href="/contact-mcu">Contact MCU</a></li>
+	<li><a href="/careers">Careers</a></li>
+	<li><a title="Policies and Disclosures" href="/policies-and-disclosures">Policies and Disclosures</a></li>
 
 	</ul>
 	<ul class="security">
-	<li class="title"><a href="banking-security">Security</a></li>
-	<li><a href="phishing-banking-scams">Phishing</a></li>
-	<li><a title="Idenity Fraud" href="identity-fraud">Identity Fraud</a></li>
-	<li><a href="banking-scams">Scams</a></li>
+	<li class="title"><a href="/banking-security">Security</a></li>
+	<li><a href="/phishing-banking-scams">Phishing</a></li>
+	<li><a title="Idenity Fraud" href="/identity-fraud">Identity Fraud</a></li>
+	<li><a href="/banking-scams">Scams</a></li>
 	</ul>
 	<div class="foot-rt">
 	<p>&copy; Copyright 2015. Missouri Credit Union. All Rights Reserved.</p>
