@@ -21,7 +21,7 @@
 
 </div><!--/ pods-none-auto-rate-341 -->
    <div id="pods-features-fixed-rate-342" class="pods-features-fixed-rate clearfix">
-<p><a class="mortgage-rates" style="text-decoration: none; color: white;" href="home-loans#mortgagerates">Mortgage Loan Rates</a></p>
+<p><a class="mortgage-rates" style="text-decoration: none; color: white;" href="/home-loans#mortgagerates">Mortgage Loan Rates</a></p>
 
 </div><!--/ pods-features-fixed-rate-342 -->
  <div style="clear:both;"></div>

@@ -135,16 +135,20 @@ function mcu_scripts() {
 
 	wp_enqueue_style( 'mcu-style', get_stylesheet_uri() );
 	/**
-	 * Enqueue scripts and styles for loan apps.
+	 * Enqueue scripts and styles for loan apps & calcualtors.
 	 */
-  if (is_page( array (22,155,482,536))) {
+  if (is_page( array (22,155,482,536,182))) {
 		remove_filter ('the_content',  'wpautop');
     wp_enqueue_style( 'form-styles', get_template_directory_uri() . '/forms.css' );
 		wp_register_script('popup-js', get_template_directory_uri() . '/js/popup.js', false, '1.0', true );
 		wp_enqueue_script('popup-js');
 
 	}
-
+if (is_page(122)){
+	wp_register_script('rvr-js', get_template_directory_uri() . '/js/rvrcalc.js', false, '1.0', true );
+	wp_enqueue_style( 'rvr-styles', get_template_directory_uri() . '/forms.css' );
+	wp_enqueue_script('rvr-js');
+}
 
 	wp_register_script('mcu-jq-js', get_template_directory_uri() . '/js/jquery-2.1.3.min.js', false, '1.0', true );
 	wp_enqueue_script('mcu-jq-js');
