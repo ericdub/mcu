@@ -144,12 +144,22 @@ function mcu_scripts() {
 		wp_enqueue_script('popup-js');
 
 	}
-if (is_page(122)){
+	if (is_page(147)) {
+		remove_filter ('the_content',  'wpautop');
+    wp_enqueue_style( 'form-styles', get_template_directory_uri() . '/forms.css' );
+	
+
+
+	}
+
+  if (is_page(122)){
 	wp_register_script('rvr-js', get_template_directory_uri() . '/js/rvrcalc.js', false, '1.0', true );
 	wp_enqueue_style( 'rvr-styles', get_template_directory_uri() . '/forms.css' );
 	wp_enqueue_script('rvr-js');
-}
-
+  }
+	/**
+	 * END
+	 */
 	wp_register_script('mcu-jq-js', get_template_directory_uri() . '/js/jquery-2.1.3.min.js', false, '1.0', true );
 	wp_enqueue_script('mcu-jq-js');
 	wp_register_script('mcu-main-js', get_template_directory_uri() . '/js/main.js', false, '1.0', true );
