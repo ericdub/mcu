@@ -38,6 +38,7 @@
 <?php
 if (is_front_page ()) {
 ?>
+<div class="skip-links"><a href="#tmpl-interior">skip to content</a>
 <header style="background-color:#fff;"><!--/site header-->
 	<div id="leader-wrap" >
 	<div id="leaderboard">
@@ -51,13 +52,13 @@ if (is_front_page ()) {
 	                        <input type="submit" value="Sign In" class="sbmt-btn" name="SubmitNext">
 	                    </form>
 	                   <div style="width:220px;">
-	                    	<a href="https://hb.missouricu.org/User/AccessSignup/Start" style="border-right:1px #ffffff solid;">Register</a>
+	                    	<a href="https://hb.missouricu.org/User/AccessSignup/Start" title="Home banking user name" style="border-right:1px #ffffff solid;">Register</a>
 	                        <a href="https://hb.missouricu.org/User/AccessSigninResetUsername/Start">Forgot Username?</a>
 	                    </div>
 	                 </div>
 	                 <div id="search">
 										 <form name="" action="<?php echo home_url( '/' ); ?>" method="get">
-													<input type="text" name="s" value="" size="40" class="srch-fld" placeholder="Search">
+													<input type="text" name="s" value="" size="40" class="srch-fld" title="Site search" placeholder="Search">
 													<input type="submit" value="" class="srch-sbmt-btn">
 											</form>
 	                    <div id="icons">
@@ -100,7 +101,7 @@ if (is_front_page ()) {
                     </div>
                  </div>
                  <div id="search">
-                 	<form name="search" action="<?php echo home_url( '/' ); ?>" method="get">
+                 	<form name="" action="<?php echo home_url( '/' ); ?>" method="get">
                         <input type="text" name="s" value="" size="40" class="srch-fld" placeholder="Search">
                         <input type="submit" value="" class="srch-sbmt-btn">
                     </form>

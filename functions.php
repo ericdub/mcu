@@ -1,4 +1,5 @@
 <?php
+
 /**
  * MCU functions and definitions.
  *
@@ -128,6 +129,12 @@ function remove_wp_archives(){
   }
 }
 
+/*Remove Un-needed Feeds*/
+function my_remove_feeds() {
+	remove_action( 'wp_head', 'feed_links_extra', 3 );
+	remove_action( 'wp_head', 'feed_links', 2 );
+}
+add_action( 'after_setup_theme', 'my_remove_feeds' );
 /**
  * Enqueue scripts and styles.
  */
@@ -137,7 +144,7 @@ function mcu_scripts() {
 	/**
 	 * Enqueue scripts and styles for loan apps & calcualtors.
 	 */
-  if (is_page( array (22,155,482,536,182))) {
+  if (is_page( array (22,155,482,536,182,165))) {
 		remove_filter ('the_content',  'wpautop');
     wp_enqueue_style( 'form-styles', get_template_directory_uri() . '/forms.css' );
 		wp_register_script('popup-js', get_template_directory_uri() . '/js/popup.js', false, '1.0', true );
@@ -147,7 +154,7 @@ function mcu_scripts() {
 	if (is_page(147)) {
 		remove_filter ('the_content',  'wpautop');
     wp_enqueue_style( 'form-styles', get_template_directory_uri() . '/forms.css' );
-	
+
 
 
 	}

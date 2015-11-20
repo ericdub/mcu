@@ -1,4 +1,6 @@
 <?php
+update_option( 'siteurl', 'http://192.168.1.196' );
+update_option( 'home', 'http://192.168.1.196' );
 /**
  * The template for displaying the footer.
  *
@@ -37,7 +39,9 @@
 
 	</div><!--/ pods-features-footer-nav-89 -->
 	        <div style="clear:both;"></div>
-	      <?php include ('webid.php')?>
+	      <?php
+				//include ('webid.php')
+				echo $_SERVER['SERVER_NAME']?>
 	    </div><!--/footer-->
 	</div><!--/contained-->
 	<script src="/wp-content/themes/mcu/js/jquery.validate.min.js"></script>
