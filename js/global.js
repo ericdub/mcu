@@ -172,7 +172,7 @@ $('a').each(function(){
 setTimeout(function(){
 		$('.hidden-hank').animate({top:'-12px'},500);
 		var randNum = Math.floor(Math.random()*(21-1+1)+1);
-		$('#hank-expand').html('<img src="/wp-content/uploads/static/hank-tips/Hank-Tips_'+randNum+'.jpg" />');
+		$('#hank-expand').html('<img src="/wp-content/uploads/static/hank-tips/Hank-Tips_'+randNum+'.jpg" alt="A tip from Hank" />');
 	}, 1000);
 	$('.hidden-hank').click(function() {
 		$('.hidden-hank').animate({top:'-100px'},500, function(){
@@ -181,7 +181,7 @@ setTimeout(function(){
 				$('#hank-expand').slideUp(500, function(){
 					$('.hidden-hank').animate({top:'-12px'},500);
 					var randNum = Math.floor(Math.random()*(21-1+1)+1);
-					$('#hank-expand').html('<img src="/wp-content/uploads/static/hank-tips/Hank-Tips_'+randNum+'.jpg" />');
+					$('#hank-expand').html('<img src="/wp-content/uploads/static/hank-tips/Hank-Tips_'+randNum+'.jpg" alt="A tip from Hank" />');
 				});
 			}, 10000);
 		});
