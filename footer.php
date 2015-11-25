@@ -33,7 +33,7 @@ update_option( 'home', 'http://192.168.1.196' );
 	</ul>
 	<div class="foot-rt">
 	<p>&copy; Copyright 2015. Missouri Credit Union. All Rights Reserved.</p>
-	<p>&nbsp;<img src="/wp-content/uploads/static/ncua.png" alt="" />&nbsp; <img class="mid-logo" src="/wp-content/uploads/static/esi_logo.png" alt="" /> <img src="/wp-content/uploads/static/ehl_logo.png" alt="" /></p>
+	<p>&nbsp;<img src="/wp-content/uploads/static/ncua.png" alt="NCUA logo image" />&nbsp; <img class="mid-logo" src="/wp-content/uploads/static/esi_logo.png" alt="ESI logo image" /> <img src="/wp-content/uploads/static/ehl_logo.png" alt="EHL logo image" /></p>
 	<p>This credit union is federally insured by the National Credit Union Administration.</p>
 	</div>
 
