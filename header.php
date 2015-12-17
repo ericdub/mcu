@@ -38,7 +38,7 @@
 <?php
 if (is_front_page ()) {
 ?>
-<div class="skip-links"><a href="#tmpl-interior">skip to content</a>
+
 <header style="background-color:#fff;"><!--/site header-->
 	<div id="leader-wrap" >
 	<div id="leaderboard">
@@ -70,6 +70,7 @@ if (is_front_page ()) {
 	                 </div>
 
 	            </div><!--/header-->
+							<a href="/apple-pay"><div class="home-banner"></div></a>
 	         </div><!--/header-wrap-->
 	           <?php include('/wp-content/themes/mcu/inc/nav.php') ?>
 	</div><!--/leaderboard-->
