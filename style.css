@@ -1335,6 +1335,7 @@ p.snipit {
 		width: 768px;
 	}
 	#login {
+    width: auto;
 		width: initial;
 		padding: 20px 13px;
 	}
@@ -1345,8 +1346,12 @@ p.snipit {
 		font-size:.9em;
 	}
 	#search {
-		padding: 25px 13px;
+	  padding: 25px 13px;
+		width: auto;
 		width: initial;
+
+
+
 	}
 	#search .srch-fld {
 		width:150px;
@@ -1553,6 +1558,7 @@ p.snipit {
 		text-align: center;
 		margin:auto;
 		display:block;
+
 	}
 	.pods-none-right-column, .pods-features-disclaimer {
 		float:none;
