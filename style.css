@@ -68,7 +68,7 @@ body {
 }
 
 body.inside {
-	background-color: #eaeaea;
+	background-color: #F3F3F3;
 }
 .contained {
 	background: none;
@@ -620,7 +620,7 @@ ul.interior-main {
 	padding: 0 0 30px;
 }
 #tmpl-interior, #tmpl-search, #tmpl-interior + #site-footer {
-	background: #eaeaea;
+	background: #F3F3F3;
 }
 #tmpl-search {
 	padding-bottom: 10px;
@@ -740,7 +740,7 @@ ul.interior-main {
 	margin: 0px auto;
 	position: relative;
 	height: 245px;
-	background: #eaeaea;
+	background: #F3F3F3;
 	width:1080px;
 }
 
@@ -1519,7 +1519,7 @@ p.snipit {
 }
 @media only screen and (max-width: 767px) {
 	#leader-wrap {
-		background: #eaeaea;
+		background: #F3F3F3;
 	}
 	#leaderboard, #header, #main-nav, #main-nav-int, .copy-wrap, ul.interior-intro, #footer {
 		width: 480px;
