@@ -70,7 +70,7 @@ if (is_front_page ()) {
 	                 </div>
 
 	            </div><!--/header-->
-							<a href="/apple-pay"><div class="home-banner"></div></a>
+							<a href="/apple-pay"><div class="home-banner"><img src="/wp-content/uploads/static/HeaderBg.png"/></div></a>
 	         </div><!--/header-wrap-->
 	           <?php include('/wp-content/themes/mcu/inc/nav.php') ?>
 	</div><!--/leaderboard-->

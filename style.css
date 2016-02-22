@@ -89,8 +89,8 @@ header {
 	background-repeat:repeat-x;
 }
 #leader-wrap {
-	background-image: url('/wp-content/uploads/static/HeaderBg.png');
-	background-repeat:no-repeat;
+	/*background-image: url('/wp-content/uploads/static/HeaderBg.png');
+	background-repeat:no-repeat; */
 	width: 100%;
 
 	position: relative;
@@ -106,7 +106,7 @@ header {
 #leaderboard img {
 	margin: 0px auto;
 }
-.home-banner {
+.home-banner img {
 height:100%;
 width:100%;
 

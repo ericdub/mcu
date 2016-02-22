@@ -1,6 +1,6 @@
 <?php
-update_option( 'siteurl', 'http://192.168.1.196' );
-update_option( 'home', 'http://192.168.1.196' );
+//update_option( 'siteurl', 'http://192.168.1.196' );
+//update_option( 'home', 'http://192.168.1.196' );
 /**
  * The template for displaying the footer.
  *
