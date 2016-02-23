@@ -1524,6 +1524,10 @@ p.snipit {
 	#leaderboard, #header, #main-nav, #main-nav-int, .copy-wrap, ul.interior-intro, #footer {
 		width: 480px;
 	}
+	.home-banner img {
+	display: none;
+
+	}
 	.pods-features-homepromo img {
 
 		width:inherit;
@@ -1727,6 +1731,10 @@ p.snipit {
 	}
 	#main-nav ul li.current {
 		height: 33px;
+	}
+	.home-banner img {
+	display: none;
+
 	}
 	.nav-open {
 		width: 299px;
