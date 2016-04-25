@@ -44,7 +44,7 @@
 				echo $_SERVER['SERVER_NAME']?>
 	    </div><!--/footer-->
 	</div><!--/contained-->
-	<script src="/wp-content/themes/mcu/js/jquery.validate.min.js"></script>
+	
 
 
 			</footer><!--/footer-->

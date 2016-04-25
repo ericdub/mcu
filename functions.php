@@ -114,6 +114,36 @@ add_action( 'widgets_init', 'mcu_widgets_init' );
 /* Register template redirect action callback */
 add_action('template_redirect', 'remove_wp_archives');
 
+
+// make root relative
+add_action( 'template_redirect', 'rw_relative_urls' );
+function rw_relative_urls() {
+    // Don't do anything if:
+    // - In feed
+    // - In sitemap by WordPress SEO plugin
+    if ( is_feed() || get_query_var( 'sitemap' ) )
+        return;
+    $filters = array(
+        'post_link',
+        'post_type_link',
+        'page_link',
+        'attachment_link',
+        'get_shortlink',
+        'post_type_archive_link',
+        'get_pagenum_link',
+        'get_comments_pagenum_link',
+        'term_link',
+        'search_link',
+        'day_link',
+        'month_link',
+        'year_link',
+    );
+    foreach ( $filters as $filter )
+    {
+        add_filter( $filter, 'wp_make_link_relative' );
+    }
+}
+
 /*Widget content filter
 add_filter('widget_content', 'basic_widget_content_filter');
 function basic_widget_content_filter($content='foo') {
@@ -157,6 +187,9 @@ function mcu_scripts() {
     wp_enqueue_style( 'form-styles', get_template_directory_uri() . '/forms.css' );
 		wp_register_script('popup-js', get_template_directory_uri() . '/js/popup.js', false, '1.0', true );
 		wp_enqueue_script('popup-js');
+		wp_register_script('validate-js', get_template_directory_uri() . '/js/jquery.validate.min.js', false, '1.0', true );
+		wp_enqueue_script('validate-js');
+
 
 
 	}
@@ -173,6 +206,10 @@ function mcu_scripts() {
 	wp_enqueue_style( 'rvr-styles', get_template_directory_uri() . '/forms.css' );
 	wp_enqueue_script('rvr-js');
   }
+
+
+
+
 	/**
 	 * END
 	 */
@@ -188,6 +225,7 @@ function mcu_scripts() {
 	wp_enqueue_script('mcu-jqui-js');
 	wp_register_script('mcu-carousel-js', get_template_directory_uri() . '/js/jquery.carouFredSel-6.2.1-packed.js', 'mcu-jq-js', '1.0', true );
 	wp_enqueue_script('mcu-carousel-js');
+
 
 
 	wp_enqueue_script( 'mcu-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );

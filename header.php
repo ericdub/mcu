@@ -70,7 +70,16 @@ if (is_front_page ()) {
 	                 </div>
 
 	            </div><!--/header-->
-							<a href="/apple-pay"><div class="home-banner"><img src="/wp-content/uploads/static/HeaderBg.png"/></div></a>
+							<?php
+							    $swaptime = strtotime ("12 April 2016");
+									if ($swaptime >= time()){
+										echo '<a href="/health-savings-accounts/"><div class="home-banner"><img src="/wp-content/uploads/2016/04/EMV-banner.png"/></div></a>';
+									} else {
+										echo '<a href="/apple-pay"><div class="home-banner"><img src="/wp-content/uploads/2016/04/Autos.png"/></div></a>';
+
+									}
+							?>
+
 	         </div><!--/header-wrap-->
 	           <?php include('/wp-content/themes/mcu/inc/nav.php') ?>
 	</div><!--/leaderboard-->

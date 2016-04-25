@@ -541,7 +541,11 @@ ul.lvl-2 {
 
 .left-pad { padding-left: 20px; margin-right: 0px; }
 
-h1 { }
+h1 {	color:#00728f;
+	font-weight:400;
+	font-size: 27px;
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif; }
 
 h2 {
 	color:#00728f;

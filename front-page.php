@@ -11,7 +11,6 @@
  *
  * @package MCU
  */
-
 get_header(); ?>
 
 
@@ -28,10 +27,10 @@ get_header(); ?>
             </div><!--/three-colo-->
             <div class="three-col left-pad">
                 <div id="pods-features-welcome-2" class="pods-features-welcome clearfix">
-	<h2>Welcome</h2>
+	<h1>Welcome</h1>
     <p>To the place where members come first. Where checking, savings and other accounts can add up to pay you back. Where loans are simple and members matter, not profits.&nbsp;</p>
 <p class="bull-o">&bull; &bull; &bull;</p>
-<p class="blue">Welcome to Missouri Credit Union. No, we're not a bank. <br /> <a class="org" href="https://prezi.com/ku4rlmwqfvwb/financial-common-sense/" target="_blank">Yes, we like it that way.</a></p>
+<p class="blue">Welcome to Missouri Credit Union. No, we're not a bank. <br /> <a class="org" href="https://prezi.com/j7f3dvmrlay_/credit-unions-vs-banks/" target="_blank">Yes, we like it that way.</a></p>
 
 </div><!--/ pods-features-welcome-2 -->
             </div><!--/three-colo-->
