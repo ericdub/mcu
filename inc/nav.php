@@ -42,7 +42,7 @@
 
 
 
-?>
+?>%
 </p>
 <p class="subrate">Auto Loan Rate</p>
 <p class="subrate">Some restrictions may apply.<br />With approved credit.</p>
