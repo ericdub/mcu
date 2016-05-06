@@ -1,6 +1,6 @@
 <?php
 /**
- * The header for our theme.
+ * The header for our Wordpress theme.
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
@@ -73,9 +73,9 @@ if (is_front_page ()) {
 							<?php
 							    $swaptime = strtotime ("12 April 2016");
 									if ($swaptime >= time()){
-										echo '<a href="/health-savings-accounts/"><div class="home-banner"><img src="/wp-content/uploads/2016/04/EMV-banner.png"/></div></a>';
+										echo '<a href="/health-savings-accounts/"><div class="home-banner"><img src="/wp-content/uploads/2016/04/AppVersion4.png"/></div></a>';
 									} else {
-										echo '<a href="/apple-pay"><div class="home-banner"><img src="/wp-content/uploads/2016/04/Autos.png"/></div></a>';
+										echo '<a href="/apple-pay"><div class="home-banner"><img src="/wp-content/uploads/2016/04/AppVersion4.png"/></div></a>';
 
 									}
 							?>

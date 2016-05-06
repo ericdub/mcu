@@ -18,9 +18,9 @@
       </div>
     		<div id="pods-none-hank-13" class="pods-none-hank clearfix">
 					  <div class="contained">
-				    	<div class="hidden-hank"><img src="/wp-content/uploads/static/hiddenHank.png" /></div><!--/hidden-hank-->
+				    	<div class="hidden-hank"><img src="/wp-content/uploads/static/hiddenHank.png" alt="Hank the pig" /></div><!--/hidden-hank-->
 				    </div>
-						<div id="hank-expand"><img src="/wp-content/uploads/static/hank-tips/Hank-Tips_21.jpg" /></div>
+						<div id="hank-expand"><img src="/wp-content/uploads/static/hank-tips/Hank-Tips_21.jpg" alt="Tip from Hank" /></div>
 				</div><!--/ pods-none-hank-13 -->
 				<div id="pods-features-interior-intro-81" class="pods-features-interior-intro clearfix">
 				    <div class="white-top">
@@ -37,7 +37,7 @@
     </div>
 	</header><!-- .entry-header -->
 
-<div class="copy-wrap" style="background-color:#eaeaea">
+<div class="copy-wrap">
 	<div class="pods-features-interior-main clearfix">
 	<div class="contain">
 				<?php the_content(); ?>

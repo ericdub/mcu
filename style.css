@@ -778,8 +778,14 @@ ul.interior-main {
 	*/
 }
 
-.blue-box h3 {
+.blue-box h2 {
 	text-transform: none!important;
+	color: #0091b5;
+    font-family: "Montserrat",sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 8px 0;
+    text-transform: uppercase;
 }
 
 .copy-wrap ul {

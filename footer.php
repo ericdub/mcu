@@ -2,7 +2,7 @@
 //update_option( 'siteurl', 'http://192.168.1.196' );
 //update_option( 'home', 'http://192.168.1.196' );
 /**
- * The template for displaying the footer.
+ * The template for displaying the page footer.
  *
  * Contains the closing of the #content div and all content after.
  *
@@ -44,7 +44,7 @@
 				echo $_SERVER['SERVER_NAME']?>
 	    </div><!--/footer-->
 	</div><!--/contained-->
-	
+
 
 
 			</footer><!--/footer-->
