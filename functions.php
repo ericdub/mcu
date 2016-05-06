@@ -10,7 +10,7 @@
 
 if ( ! function_exists( 'mcu_setup' ) ) :
 /**
- * Sets up theme defaults and registers support for various WordPress features.
+ * Sets up theme default and registers support for various WordPress features.
  *
  * Note that this function is hooked into the after_setup_theme hook, which
  * runs before the init hook. The init hook is too late for some features, such
