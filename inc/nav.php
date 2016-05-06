@@ -15,7 +15,35 @@
 </div><!--/main-nav-->
 <div class="nav-open" style="display:none;">
  <div id="pods-features-auto-rate-341" class="pods-features-auto-rate clearfix">
-<p class="rate">2.09% APR</p>
+<p class="rate">
+  <?php
+
+			require '../includes/mysqli_connect_new2.php';
+
+
+			if ($db->connect_error) {
+				$error = $db->connect_error;
+			}
+			if ($db->connect_error) {
+				$error = $db->connect_error;
+			}
+			$db->set_charset('utf8');
+				try {
+				$sql="SELECT RATE FROM LoanRate where CATNAME='CARFIX1'";
+				$result = $db->query($sql);
+			} catch (Exception $e) {
+			}
+			while ($row = $result->fetch_assoc()) {
+
+				echo number_format($row['RATE'],2);
+
+			}
+
+
+
+
+?>
+</p>
 <p class="subrate">Auto Loan Rate</p>
 <p class="subrate">Some restrictions may apply.<br />With approved credit.</p>
 
