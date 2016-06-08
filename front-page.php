@@ -21,7 +21,17 @@ get_header(); ?>
     	<div class='copy-wrap'>
             <div class="three-col">
                 <div id="pods-features-homepromo-1" class="pods-features-homepromo clearfix">
-    <p><a href="banking-security"><img src="/wp-content/uploads/static/content/leaderboards/Debit_Fraud_PIN.png" alt="Debit card fraud warning for New York and Texas" width="340" height="270" /></a><img src="/wp-content/uploads/static/content/leaderboards/MCU_Leaderboard_340x270_BWConstruction.png" alt="Notification of temporary closure for Buttonwood branch on August 3" width="340" height="270" /></p>
+    <p><a href="https://missouricu.org/new-fraud-prevention-service">
+			<img src="http://missouricu.org/wp-content/uploads/2015/08/MCU_Leaderboard_340x270_FICO.png"
+			alt="Fraud prevention service" width="340" height="270" /></a>
+			<a href="https://missouricu.org/mobile-banking">
+				<img src="http://missouricu.org/wp-content/uploads/2015/08/340x270_AppV4.png" alt="Download the new mobile app." width="340" height="270" />
+			</a>
+			<a href="https://missouricu.org/autos-for-sale">
+				<img src="http://missouricu.org/wp-content/uploads/2015/08/340x270_autos-for-sale.png" alt="Autos for sale"
+				width="340" height="270" />
+			</a></p>
+
 
 </div><!--/ pods-features-homepromo-1 -->
             </div><!--/three-colo-->
