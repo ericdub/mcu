@@ -2,7 +2,7 @@
 //update_option( 'siteurl', 'http://192.168.1.196' );
 //update_option( 'home', 'http://192.168.1.196' );
 /**
- * The template for displaying the page footer.
+ * The template for displaying the footer.
  *
  * Contains the closing of the #content div and all content after.
  *
@@ -40,11 +40,28 @@
 	</div><!--/ pods-features-footer-nav-89 -->
 	        <div style="clear:both;"></div>
 	      <?php
-				//include ('webid.php')
-				echo $_SERVER['SERVER_NAME']?>
+	// webid.php (shows server ID info)
+	// last modified: 04.20.15
+
+	$web01 = '192.168.12.11';
+	$web02 = '192.168.12.12';
+	$web03 = '192.168.12.13';
+	$webip = $_SERVER['SERVER_ADDR'];
+	echo "<span style='font-family:Verdana,Arial,sans serif;font-size:1.0em;font-weight:400;margin:0 auto;'>";
+		if ($webip == $web01) {
+			echo "<p>Web 01</p>";
+		} elseif ($webip == $web02) {
+			echo "<p>Web 02</p>";
+		} elseif ($webip == $web03) {
+			echo "<p>Web 03</p>";
+		}
+	echo "</span>";
+	
+?>
+				
 	    </div><!--/footer-->
 	</div><!--/contained-->
-
+	
 
 
 			</footer><!--/footer-->

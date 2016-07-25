@@ -75,7 +75,7 @@ if (is_front_page ()) {
 									//if ($swaptime >= time()){
 										//echo '<a href="/health-savings-accounts/"><div class="home-banner"><img src="/wp-content/uploads/2016/04/AppVersion4.png"/></div></a>';
 									//} else {
-										echo '<a href="/apple-pay"><div class="home-banner"><img src="http://missouricu.org/wp-content/uploads/2016/06/banner_EMV.png"/></div></a>';
+										echo '<a href="/emv-chip-cards"><div class="home-banner"><img src="/wp-content/uploads/2016/06/banner_EMV.png"/></div></a>';
 
 									//}
 							?>

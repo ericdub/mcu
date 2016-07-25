@@ -1,5 +1,5 @@
 <?php
-
+remove_filter('template_redirect','redirect_canonical');
 /**
  * MCU functions and definitions.
  *
@@ -7,10 +7,16 @@
  *
  * @package MCU
  */
+if (function_exists('header_remove')) {
+    header_remove('X-Powered-By');
+}
+
+
+
 
 if ( ! function_exists( 'mcu_setup' ) ) :
 /**
- * Sets up theme default and registers support for various WordPress features.
+ * Sets up theme defaults and registers support for various WordPress features.
  *
  * Note that this function is hooked into the after_setup_theme hook, which
  * runs before the init hook. The init hook is too late for some features, such
@@ -159,6 +165,19 @@ function remove_wp_archives(){
   }
 }
 
+/*
+ * Force URLs in srcset attributes into HTTPS scheme.
+ * This is particularly useful when you're running a Flexible SSL frontend like Cloudflare
+ */
+function ssl_srcset( $sources ) {
+  foreach ( $sources as &$source ) {
+    $source['url'] = set_url_scheme( $source['url'], 'https' );
+  }
+
+  return $sources;
+}
+add_filter( 'wp_calculate_image_srcset', 'ssl_srcset' );
+
 /*Remove Un-needed Feeds*/
 function my_remove_feeds() {
 	remove_action( 'wp_head', 'feed_links_extra', 3 );
@@ -174,7 +193,7 @@ function mcu_scripts() {
 	/**
 	 * Enqueue scripts and styles for loan apps & calcualtors.
 	 */
-  if (is_page( array (22,155,482,536,182,165))) {
+  if (is_page( array (22,155,482,536,182,165,147))) {
 
     //recaptcha on user forms
 		if (is_page( array (22,155,482,536))) {
@@ -262,3 +281,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+//Remove shortlinks from wp_head
+remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);

@@ -21,16 +21,15 @@ get_header(); ?>
     	<div class='copy-wrap'>
             <div class="three-col">
                 <div id="pods-features-homepromo-1" class="pods-features-homepromo clearfix">
-    <p><a href="https://missouricu.org/new-fraud-prevention-service">
-			<img src="http://missouricu.org/wp-content/uploads/2015/08/MCU_Leaderboard_340x270_FICO.png"
+    <p>
+	<a href="http://shieldyourpin.org"><img src="/wp-content/uploads/2016/06/MCU_Leaderboard_340x270_PIN.png" alt="Shield your PIN"/></a>
+	<a href="https://missouricu.org/fraud-prevention-service">
+			<img src="/wp-content/uploads/2015/08/MCU_Leaderboard_340x270_FICO.png"
 			alt="Fraud prevention service" width="340" height="270" /></a>
 			<a href="https://missouricu.org/mobile-banking">
-				<img src="http://missouricu.org/wp-content/uploads/2015/08/340x270_AppV4.png" alt="Download the new mobile app." width="340" height="270" />
+				<img src="/wp-content/uploads/2015/08/340x270_AppV4.png" alt="Download the new mobile app." width="340" height="270" />
 			</a>
-			<a href="https://missouricu.org/autos-for-sale">
-				<img src="http://missouricu.org/wp-content/uploads/2015/08/340x270_autos-for-sale.png" alt="Autos for sale"
-				width="340" height="270" />
-			</a></p>
+			</p>
 
 
 </div><!--/ pods-features-homepromo-1 -->
