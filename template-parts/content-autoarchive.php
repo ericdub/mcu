@@ -10,40 +10,27 @@
 ?>
 <div id="tmpl-interior" class="tmpl-wrap clearfix">
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<div class="contained">
-    	<div class="copy-wrap">
-            <div class="breadcrumbs"></div>
-      </div>
-    		<div id="pods-none-hank-13" class="pods-none-hank clearfix">
-					  <div class="contained">
-				    	<div class="hidden-hank"><img src="/wp-content/uploads/static/hiddenHank.png" alt="Hank the pig" /></div><!--/hidden-hank-->
-				    </div>
-						<div id="hank-expand"><img src="/wp-content/uploads/static/hank-tips/Hank-Tips_21.jpg" alt="Tip from Hank" /></div>
-				</div><!--/ pods-none-hank-13 -->
-				<div id="pods-features-interior-intro-81" class="pods-features-interior-intro clearfix">
-				    <div class="white-top">
-				    	<div class="contain">
-
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-				        </div>
-				    </div>
-       </div><!--/ pods-features-interior-intro-81 -->
 
 
 
-    </div>
-	</header><!-- .entry-header -->
 
-<div class="copy-wrap">
 	<div class="pods-features-interior-main clearfix">
 	<div class="contain">
 
 		<?php
 						//Loop through custom car fields
-            the_post_thumbnail();
+
+						echo '<a href="';
+						the_permalink();
+						echo '">';
+
+						the_post_thumbnail();
+						echo "</a>";
+						echo '<a href="';
+						the_permalink();
+					  echo '">';
+						the_title( '<h2 class="entry-title">','</h2>' );
+	          echo "</a>";
                                                    echo'<ul>';
                                                    if(get_field('color')){
                                                              $auto_color = get_field('color');
@@ -72,7 +59,8 @@
 
                                                 echo '</ul>';
 
-																								$auto_make = get_field('auto-make');
+
+		                                            $auto_make = get_field('auto-make');
 																								$auto_model = get_field('auto-model');
 																								$auto_year = get_field('auto-year');
 
@@ -96,12 +84,5 @@
 				<?php edit_post_link( esc_html__( 'Edit', 'mcu' ), '<span class="edit-link">', '</span>' ); ?>
 			</footer><!-- .entry-footer -->
 	</div>
-	<div class="pods-none-right-column clearfix widget-area">
-	<?php get_sidebar(); ?>
-  </div>
-</div>
-<div style="clear:both;"></div>
-</div>
 
-
-</article><!-- #post-## -->
+</div>

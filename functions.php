@@ -11,7 +11,9 @@ if (function_exists('header_remove')) {
     header_remove('X-Powered-By');
 }
 
-
+//remove CF7 scripts and styles
+add_filter( 'wpcf7_load_js', '__return_false' );
+add_filter( 'wpcf7_load_css', '__return_false' );
 
 
 if ( ! function_exists( 'mcu_setup' ) ) :
@@ -166,12 +168,12 @@ function remove_wp_archives(){
 }
 
 /*
- * Force URLs in srcset attributes into HTTPS scheme.
- * This is particularly useful when you're running a Flexible SSL frontend like Cloudflare
+ * Force realtive URLs in srcset attributes.
+ *
  */
 function ssl_srcset( $sources ) {
   foreach ( $sources as &$source ) {
-    $source['url'] = set_url_scheme( $source['url'], 'https' );
+    $source['url'] = set_url_scheme( $source['url'], 'relative' );
   }
 
   return $sources;
@@ -184,6 +186,19 @@ function my_remove_feeds() {
 	remove_action( 'wp_head', 'feed_links', 2 );
 }
 add_action( 'after_setup_theme', 'my_remove_feeds' );
+
+//Set up custom query variables for autos
+add_filter( 'query_vars', 'addnew_query_vars', 10, 1 );
+function addnew_query_vars($vars)
+{
+    $vars[0] = 'autoyear'; // var1 is the name of variable you want to add
+    $vars[1] = 'make'; // var1 is the name of variable you want to add
+    $vars[2] = 'model'; // var1 is the name of variable you want to add
+    $vars[3] = 'price'; // var1 is the name of variable you want to add
+    return $vars;
+}
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -193,7 +208,7 @@ function mcu_scripts() {
 	/**
 	 * Enqueue scripts and styles for loan apps & calcualtors.
 	 */
-  if (is_page( array (22,155,482,536,182,165,147))) {
+  if (is_page( array (22,155,482,536,182,165,147)) || in_category('forms')) {
 
     //recaptcha on user forms
 		if (is_page( array (22,155,482,536))) {
@@ -215,7 +230,13 @@ function mcu_scripts() {
 	if (is_page(147)) {
 		remove_filter ('the_content',  'wpautop');
     wp_enqueue_style( 'form-styles', get_template_directory_uri() . '/forms.css' );
+    if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
+        wpcf7_enqueue_scripts();
+    }
 
+    if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
+        wpcf7_enqueue_styles();
+    }
 
 
 	}
@@ -232,22 +253,39 @@ function mcu_scripts() {
 	/**
 	 * END
 	 */
-	wp_register_script('mcu-jq-js', get_template_directory_uri() . '/js/jquery-2.1.3.min.js', false, '1.0', true );
-	wp_enqueue_script('mcu-jq-js');
-	wp_register_script('mcu-main-js', get_template_directory_uri() . '/js/main.js', false, '1.0', true );
-	wp_enqueue_script('mcu-main-js');
-	wp_register_script('mcu-bgpos-js', get_template_directory_uri() . '/js/bgpos.js', false, '1.0', true );
-	wp_enqueue_script('mcu-bgpos-js');
-	wp_register_script('mcu-global-js', get_template_directory_uri() . '/js/global.js', false, '1.0', true );
-	wp_enqueue_script('mcu-global-js');
-	wp_register_script('mcu-jqui-js', get_template_directory_uri() . '/js/jquery-ui-1.10.3.custom.js', 'mcu-jq-js', '1.0', true );
-	wp_enqueue_script('mcu-jqui-js');
-	wp_register_script('mcu-carousel-js', get_template_directory_uri() . '/js/jquery.carouFredSel-6.2.1-packed.js', 'mcu-jq-js', '1.0', true );
-	wp_enqueue_script('mcu-carousel-js');
+
+   wp_deregister_script('jquery');
+   wp_register_script('jquery', '/wp-includes/js/jquery/jquery-3.1.0.min.js', FALSE, '3.1.0', TRUE);
+   wp_enqueue_script('jquery');
+
+   wp_deregister_script('jquery-migrate');
+   wp_register_script('jquery-migrate', '/wp-includes/js/jquery/jquery-migrate.min.js', FALSE, '1.4.1', TRUE);
+   wp_enqueue_script('jquery-migrate');
+
+   wp_register_script('mcu-bgpos-js', get_template_directory_uri() . '/js/bgpos.js', false, '1.0', true );
+ 	 wp_enqueue_script('mcu-bgpos-js');
+
+ 	 wp_register_script('mcu-global-js', get_template_directory_uri() . '/js/global.js', false, '1.0', true );
+ 	 wp_enqueue_script('mcu-global-js');
+
+   wp_register_script('mcu-carousel-js', get_template_directory_uri() . '/js/jquery.carouFredSel-6.2.1-packed.js', 'mcu-jq-js', '1.0', true );
+   wp_enqueue_script('mcu-carousel-js');
 
 
 
-	wp_enqueue_script( 'mcu-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+   wp_enqueue_script( 'mcu-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+
+  //Trozolo CMS
+	//wp_register_script('mcu-jq-js', get_template_directory_uri() . '/js/jquery-2.1.3.min.js', false, '1.0', true );
+	//wp_enqueue_script('mcu-jq-js');
+  //Trozolo CMS
+	//wp_register_script('mcu-main-js', get_template_directory_uri() . '/js/main.js', false, '1.0', true );
+	//wp_enqueue_script('mcu-main-js');
+
+  //Trozolo CMS
+	//wp_register_script('mcu-jqui-js', get_template_directory_uri() . '/js/jquery-ui-1.10.3.custom.js', 'mcu-jq-js', '1.0', true );
+	//wp_enqueue_script('mcu-jqui-js');
+
 
 	wp_enqueue_script( 'mcu-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 

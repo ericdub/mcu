@@ -26,9 +26,7 @@ get_header(); ?>
 	<a href="https://missouricu.org/fraud-prevention-service">
 			<img src="/wp-content/uploads/2015/08/MCU_Leaderboard_340x270_FICO.png"
 			alt="Fraud prevention service" width="340" height="270" /></a>
-			<a href="https://missouricu.org/mobile-banking">
-				<img src="/wp-content/uploads/2015/08/340x270_AppV4.png" alt="Download the new mobile app." width="340" height="270" />
-			</a>
+		
 			</p>
 
 

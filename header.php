@@ -37,6 +37,18 @@
 
 <?php
 if (is_front_page ()) {
+
+	function displayRandomPhotoArea() {
+	    $images = array("/wp-content/uploads/2016/08/CardControls.png",
+	    "/wp-content/uploads/2016/06/banner_EMV.png", "/wp-content/uploads/2016/08/eAlerts.png");
+	    $links = array("http://missouricu.org/mobile-banking",
+	    "http://missouricu.org/emv-chip-cards", "http://missouricu.org/e-alerts-bank-notifications/");
+	    $randomNumber = rand(0, (count($images) - 1));
+
+	    echo '<a href="'. $links[$randomNumber].'"><div class="home-banner"><img src="' . $images[$randomNumber] . '" ></div></a>';
+	}
+
+
 ?>
 
 <header style="background-color:#fff;"><!--/site header-->
@@ -71,11 +83,9 @@ if (is_front_page ()) {
 
 	            </div><!--/header-->
 							<?php
-							  //  $swaptime = strtotime ("12 April 2016");
-									//if ($swaptime >= time()){
-										//echo '<a href="/health-savings-accounts/"><div class="home-banner"><img src="/wp-content/uploads/2016/04/AppVersion4.png"/></div></a>';
-									//} else {
-										echo '<a href="/emv-chip-cards"><div class="home-banner"><img src="/wp-content/uploads/2016/06/banner_EMV.png"/></div></a>';
+							// Display a random image here
+							displayRandomPhotoArea();
+										//echo '<a href="/emv-chip-cards"><div class="home-banner"><img src="/wp-content/uploads/2016/06/banner_EMV.png"/></div></a>';
 
 									//}
 							?>
@@ -94,7 +104,7 @@ if (is_front_page ()) {
 	<header><!--/site header-->
 
 
-<div id="leader-wrap" style="background:#eaeaea;">
+<div id="leader-wrap" style="background:#f8f8f8;">
 <div id="leaderboard">
 		<div id="header-wrap" class="int-head">
             <div id="header">

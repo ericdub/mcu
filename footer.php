@@ -1,6 +1,5 @@
 <?php
-//update_option( 'siteurl', 'http://192.168.1.196' );
-//update_option( 'home', 'http://192.168.1.196' );
+
 /**
  * The template for displaying the footer.
  *
@@ -33,7 +32,7 @@
 	</ul>
 	<div class="foot-rt">
 	<p>&copy; Copyright 2015. Missouri Credit Union. All Rights Reserved.</p>
-	<p>&nbsp;<img src="/wp-content/uploads/static/ncua.png" alt="NCUA logo image" />&nbsp; <img class="mid-logo" src="/wp-content/uploads/static/esi_logo.png" alt="ESI logo image" /> <img src="/wp-content/uploads/static/ehl_logo.png" alt="EHL logo image" /></p>
+	<p>&nbsp;<img src="/wp-content/uploads/2016/08/ncua.png" alt="NCUA logo image" />&nbsp; <img class="mid-logo" src="/wp-content/uploads/2016/08/esi_logo.png" alt="ESI logo image" /> <img src="/wp-content/uploads/2016/08/ehl_logo.png" alt="EHL logo image" /></p>
 	<p>This credit union is federally insured by the National Credit Union Administration.</p>
 	</div>
 
@@ -56,12 +55,12 @@
 			echo "<p>Web 03</p>";
 		}
 	echo "</span>";
-	
+
 ?>
-				
+
 	    </div><!--/footer-->
 	</div><!--/contained-->
-	
+
 
 
 			</footer><!--/footer-->
