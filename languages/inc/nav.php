@@ -15,7 +15,7 @@
         <ul class="lvl-2">
           <li class="lvl-2 nav-autos-for-sale"><a href="/autos-for-sale" >Autos for Sale</a></li>
           <li class="lvl-2 nav-preferred-partners-dealerships"><a href="/preferred-partners-dealerships" class=""  >Preferred Partners - Dealerships</a></li>
-          <li class="lvl-2 nav-loan-application-1"><a href="/loan-application" class=" external" >Loan Application</a></li>
+          <li class="lvl-2 nav-loan-application-1"><a href="/applications/eLoanApp/loan_app.php" class=" external" target="_blank" >Loan Application</a></li>
           <li class="lvl-2 nav-auto-loan-rewards-program"><a href="/auto-loan-rewards-program" class=""  >Rewards</a></li>
           <li class="lvl-2 nav-skip-a-payment"><a href="/skip-a-payment" class=""  >Skip-a-Payment</a></li>
         </ul>
@@ -73,7 +73,7 @@
     <li class="lvl-1 nav-customer-center">
       <ul class="lvl-2">
         <li class="lvl-2 nav-mcuhome-login"><a href="https://hb.missouricu.org" class=" external" target="_blank" >MCU@Home Login</a></li>
-        <li class="lvl-2 nav-mobile-banking-login"><a href="/mobile-banking" class=" external" target="_blank" >Mobile Banking Apps</a></li>
+        <li class="lvl-2 nav-mobile-banking-login"><a href="https://m.mobilecu.org/MissouriCU/Login.aspx" class=" external" target="_blank" >Mobile Banking Login</a></li>
         <li class="lvl-2 nav-banking-by-phone-24-7-access"><a href="/banking-by-phone-24-7-access" class=""  >Call24</a></li>
       </ul>
     </li>
@@ -162,7 +162,7 @@
 
 
 ?>%
- APR</p>
+</p>
 <p class="subrate">Auto Loan Rate</p>
 <p class="subrate">Some restrictions may apply.<br />With approved credit.</p>
 
