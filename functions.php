@@ -1,4 +1,16 @@
 <?php
+//Start session for PQ application
+function register_prequalify_session()
+{
+  if (is_page(1182)) {
+      if( !session_id() )
+      {
+        session_start();
+      }
+  }
+}
+
+add_action('init', 'register_prequalify_session');
 remove_filter('template_redirect','redirect_canonical');
 /**
  * MCU functions and definitions.
@@ -211,7 +223,7 @@ function mcu_scripts() {
   if (is_page( array (22,155,482,536,182,165,147)) || in_category('forms')) {
 
     //recaptcha on user forms
-		if (is_page( array (22,155,482,536))) {
+		if (is_page( array (22,155,482,536,1186,1235))) {
 			wp_register_script('nocaptcha', 'https://www.google.com/recaptcha/api.js', false, '1.0', true );
 			wp_enqueue_script('nocaptcha');
 

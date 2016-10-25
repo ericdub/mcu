@@ -22,11 +22,12 @@ get_header(); ?>
             <div class="three-col">
                 <div id="pods-features-homepromo-1" class="pods-features-homepromo clearfix">
     <p>
-	<a href="http://shieldyourpin.org"><img src="/wp-content/uploads/2016/06/MCU_Leaderboard_340x270_PIN.png" alt="Shield your PIN"/></a>
+	<a href="http://missouricu.org/warm-up-columbia/"><img src="/wp-content/uploads/2015/10/MCU_Leaderboard_340x270_Warm_Up.png" alt="Winter Warm Up"/></a>		
+	<a href="/saturday-hours"><img src="/wp-content/uploads/2016/10/Leaderboard_340x270_LobbyHourSat.png" alt="New Saturday lobby hours in some branches"/></a>
 	<a href="https://missouricu.org/fraud-prevention-service">
 			<img src="/wp-content/uploads/2015/08/MCU_Leaderboard_340x270_FICO.png"
 			alt="Fraud prevention service" width="340" height="270" /></a>
-		
+
 			</p>
 
 
@@ -47,7 +48,7 @@ get_header(); ?>
     <ul>
 <li><a href="join-mcu#criteria">Open to most residents of Central Missouri</a></li>
 <li>Better rates, fewer fees</li>
-<li>32,000-plus members strong</li>
+<li>33,000-plus members strong</li>
 <li>30,000-plus free ATMs</li>
 <li>Interest-bearing accounts</li>
 <li>Mobile Banking and Remote Deposit Anywhere</li>

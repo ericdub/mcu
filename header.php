@@ -39,13 +39,16 @@
 if (is_front_page ()) {
 
 	function displayRandomPhotoArea() {
-	    $images = array("/wp-content/uploads/2016/08/CardControls.png",
-	    "/wp-content/uploads/2016/06/banner_EMV.png", "/wp-content/uploads/2016/08/eAlerts.png");
-	    $links = array("http://missouricu.org/mobile-banking",
-	    "http://missouricu.org/emv-chip-cards", "http://missouricu.org/e-alerts-bank-notifications/");
+	    $images = array("/wp-content/uploads/2016/10/HSA.png",
+	    "/wp-content/uploads/2016/06/banner_EMV.png", "/wp-content/uploads/2016/08/eAlerts.png",
+		"/wp-content/uploads/2016/08/Skimmers.png");
+	    $links = array("http://missouricu.org/health-savings-accounts",
+	    "http://missouricu.org/emv-chip-cards", "http://missouricu.org/e-alerts-bank-notifications/",
+		"http://missouricu.org/card-skimmers/");
+		$alt = array("Health Savings Account image", "EMV Chip card image", "E Alert image", "Card skimmer image");
 	    $randomNumber = rand(0, (count($images) - 1));
 
-	    echo '<a href="'. $links[$randomNumber].'"><div class="home-banner"><img src="' . $images[$randomNumber] . '" ></div></a>';
+	    echo '<a href="'. $links[$randomNumber].'"><div class="home-banner"><img src="' . $images[$randomNumber] . '" alt="'.$alt[$randomNumber].'"></div></a>';
 	}
 
 

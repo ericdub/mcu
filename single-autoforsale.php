@@ -11,7 +11,7 @@ get_header(); ?>
 
 
 			<?php while ( have_posts() ) : the_post(); ?>
-				
+
 
 				<?php get_template_part( 'template-parts/content', 'auto' ); ?>
 
@@ -24,7 +24,7 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
+		</main> <!-- #main -->
 
 	</div><!-- #primary -->
 

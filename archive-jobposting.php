@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Autos For Sale Archive
+ * Template Name: Job Postings
  **/
 
 
@@ -21,7 +21,7 @@ get_header(); ?>
 
                 <?php
 								$postType = get_queried_object();
-                echo '<h1>Autos For Sale</h1>';
+                echo '<h1>Careers</h1>';
 								?>
 				        </div>
 				    </div>
@@ -38,7 +38,7 @@ get_header(); ?>
 
 
 		 	<?php
-				$p_query = new WP_Query('post_type=autoforsale');
+				$p_query = new WP_Query('post_type=jobposting');
         if ( $p_query->have_posts() ) {
 	          while( $p_query->have_posts() ) {
 	          $p_query->the_post();
@@ -52,7 +52,7 @@ get_header(); ?>
 		 					 * If you want to override this in a child theme, then include a file
 		 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 		 					 */
-		 					get_template_part( 'template-parts/content', 'autoarchive' );
+		 					get_template_part( 'template-parts/content', 'job-posting' );
 		 				?>
 
 		 			<?php } ?>
@@ -61,9 +61,24 @@ get_header(); ?>
 
 		 		<?php } else { ?>
 
-		 			<?php get_template_part( 'template-parts/content', 'autoarchive' ); ?>
+		 			<?php get_template_part( 'template-parts/content', 'job-posting-none' ); ?>
 
 		 		<?php } ?>
+				<h2><a name="submit"></a>Submitting Your Resume:</h2>
+<p>We offer three methods for submitting your resume:</p>
+<blockquote>
+<p style="padding-left: 30px;"><strong>E-mail:</strong>  Please e-mail resume to the <strong><a href="mailto:hr@missouricu.org?subject=Employment">MCU Personnel Officer</a></strong>.</p>
+<p style="padding-left: 30px;"><strong>FAX:</strong> (573) 874-1300</p>
+<p style="padding-left: 30px;"><strong>U.S.P.S. mail:</strong></p>
+
+<blockquote style="padding-left: 30px;">
+<p>Missouri Credit Union, Attn: H.R.<br />
+P.O. Box 1795<br />
+Columbia, MO 65205-1795</p>
+</blockquote>
+</blockquote>
+<p><strong>Missouri Credit Union is an Equal Opportunity Employer (EOE)</strong></p>
+
 
 		 		</main><!-- #main -->
 

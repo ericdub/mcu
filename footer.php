@@ -22,6 +22,7 @@
 	<li><a href="/contact-mcu">Contact MCU</a></li>
 	<li><a href="/careers">Careers</a></li>
 	<li><a title="Policies and Disclosures" href="/policies-and-disclosures">Policies and Disclosures</a></li>
+  <li><a href = "https://missouricu.org/routing-number/">Routing Number &mdash; 281580417</a></li>
 
 	</ul>
 	<ul class="security">
@@ -31,7 +32,7 @@
 	<li><a href="/banking-scams">Scams</a></li>
 	</ul>
 	<div class="foot-rt">
-	<p>&copy; Copyright 2015. Missouri Credit Union. All Rights Reserved.</p>
+	<p>&copy; Copyright <?php echo date('Y'); ?>. Missouri Credit Union. All Rights Reserved.</p>
 	<p>&nbsp;<img src="/wp-content/uploads/2016/08/ncua.png" alt="NCUA logo image" />&nbsp; <img class="mid-logo" src="/wp-content/uploads/2016/08/esi_logo.png" alt="ESI logo image" /> <img src="/wp-content/uploads/2016/08/ehl_logo.png" alt="EHL logo image" /></p>
 	<p>This credit union is federally insured by the National Credit Union Administration.</p>
 	</div>
