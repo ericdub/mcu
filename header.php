@@ -39,7 +39,7 @@
 if (is_front_page ()) {
 
 	function displayRandomPhotoArea() {
-	    $images = array("/wp-content/uploads/2016/10/HSA.png",
+	    $images = array("/wp-content/uploads/2016/10/HSA2.png",
 	    "/wp-content/uploads/2016/06/banner_EMV.png", "/wp-content/uploads/2016/08/eAlerts.png",
 		"/wp-content/uploads/2016/08/Skimmers.png");
 	    $links = array("http://missouricu.org/health-savings-accounts",
