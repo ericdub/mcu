@@ -22,7 +22,7 @@ get_header(); ?>
             <div class="three-col">
                 <div id="pods-features-homepromo-1" class="pods-features-homepromo clearfix">
     <p>
-	<a href="http://missouricu.org/warm-up-columbia/"><img src="/wp-content/uploads/2015/10/MCU_Leaderboard_340x270_Warm_Up.png" alt="Winter Warm Up"/></a>		
+	<img src="/wp-content/uploads/2016/11/Leaderboard_340x270_Vet2016.png" alt="Closed for Veterans Day"/>	
 	<a href="/saturday-hours"><img src="/wp-content/uploads/2016/10/Leaderboard_340x270_LobbyHourSat.png" alt="New Saturday lobby hours in some branches"/></a>
 	<a href="https://missouricu.org/fraud-prevention-service">
 			<img src="/wp-content/uploads/2015/08/MCU_Leaderboard_340x270_FICO.png"
