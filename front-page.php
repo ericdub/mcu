@@ -22,7 +22,7 @@ get_header(); ?>
             <div class="three-col">
                 <div id="pods-features-homepromo-1" class="pods-features-homepromo clearfix">
     <p>
-	<img src="/wp-content/uploads/2016/11/Leaderboard_340x270_Vet2016.png" alt="Closed for Veterans Day"/>	
+	<img src="/wp-content/uploads/2016/11/Leaderboard_340x270_Vet2016.png" alt="Closed for Veterans Day"/>
 	<a href="/saturday-hours"><img src="/wp-content/uploads/2016/10/Leaderboard_340x270_LobbyHourSat.png" alt="New Saturday lobby hours in some branches"/></a>
 	<a href="https://missouricu.org/fraud-prevention-service">
 			<img src="/wp-content/uploads/2015/08/MCU_Leaderboard_340x270_FICO.png"
@@ -45,7 +45,7 @@ get_header(); ?>
             <div class="three-col border-l">
                 <div id="pods-features-homebenefits-3" class="pods-features-homebenefits clearfix">
 	<h2>Member Benefits</h2>
-    <ul>
+<ul>
 <li><a href="join-mcu#criteria">Open to most residents of Central Missouri</a></li>
 <li>Better rates, fewer fees</li>
 <li>33,000-plus members strong</li>
