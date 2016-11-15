@@ -15,7 +15,7 @@
 
 
 	<div class="pods-features-interior-main clearfix">
-	<div class="contain">
+	<div class="contain" itemscope itemtype="http://schema.org/Product">
 
 		<?php
 						//Loop through custom car fields
@@ -33,7 +33,7 @@
 						$model = get_field('auto-model');
 						$year = get_field('auto-year');
 						//the_title( '<h2 class="entry-title">','</h2>' );
-						echo '<h2>'.$year.' '.$make.' '.$model.'</h2>':
+						echo '<h2>'.$year.' <span itemprop="brand">'.$make.'</span> <span itemprop="name">'.$model.'</span></h2>';
 	          echo "</a>";
                                                    echo'<ul>';
                                                    if(get_field('color')){
@@ -43,8 +43,8 @@
                                                     }
                                                   if(get_field('features')){
                                                               $auto_features = get_field('features');
-                                                             echo '<li><strong>Features:</strong> '.$auto_features;
-                                                             echo '</li>';
+                                                             echo '<li><strong>Features:</strong> <span itemprop="description">'.$auto_features;
+                                                             echo '</span></li>';
 
                                                     }
                                                     if(get_field('mileage')){
@@ -55,8 +55,11 @@
                                                     }
 																										if(get_field('asking_price')){
                                                               $asking_price = get_field('asking_price');
-                                                             echo '<li><strong>Asking Price: $'.$asking_price;
-                                                             echo '</strong></li>';
+																														echo '<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">';
+                                                             echo '<meta itemprop="priceCurrency" content="USD" />';
+																														 echo '<li><strong>Asking Price: $<span itemprop="price">'.$asking_price;
+                                                             echo '</span></strong></li>';
+																														 echo '</span>';
 
                                                     }
 
