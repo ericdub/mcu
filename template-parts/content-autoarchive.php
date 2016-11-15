@@ -29,7 +29,11 @@
 						echo '<a href="';
 						the_permalink();
 					  echo '">';
-						the_title( '<h2 class="entry-title">','</h2>' );
+						$make = get_field('auto-make');
+						$model = get_field('auto-model');
+						$year = get_field('auto-year');
+						//the_title( '<h2 class="entry-title">','</h2>' );
+						echo '<h2>'.$year.' '.$make.' '.$model '</h2>':
 	          echo "</a>";
                                                    echo'<ul>';
                                                    if(get_field('color')){
