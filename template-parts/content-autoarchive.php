@@ -24,7 +24,7 @@
 						the_permalink();
 						echo '">';
 
-						the_post_thumbnail('thumbnail', array('itemprop' => 'image'));
+						the_post_thumbnail('full', array('itemprop' => 'image'));
 						echo "</a>";
 						echo '<a href="';
 						the_permalink();
