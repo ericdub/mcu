@@ -167,8 +167,8 @@
 
 
 ?>%
- APR</p>
- </span>
+ APR</span></p>
+
 <p class="subrate" itemprop="name" >Auto Loan Rate</p>
 <p class="subrate">Some restrictions may apply.<br />With approved credit.</p>
 
