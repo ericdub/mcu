@@ -133,8 +133,11 @@
  <div style="clear:both;"></div>
 </div><!--/main-nav-->
 <div class="nav-open" style="display:none;">
- <div id="pods-features-auto-rate-341" class="pods-features-auto-rate clearfix">
-<p class="rate">
+ <div id="pods-features-auto-rate-341" class="pods-features-auto-rate clearfix" itemscope itemtype="http://schema.org/LoanOrCredit">
+<p class="rate" >
+  <span itemprop="annualPercentageRate"
+		itemscope itemtype="http://schema.org/QuantitativeValue">
+
   <?php
 
 			require '../includes/mysqli_connect_new2.php';
@@ -153,8 +156,10 @@
 			} catch (Exception $e) {
 			}
 			while ($row = $result->fetch_assoc()) {
-
-				echo number_format($row['RATE'],2);
+        $apr =  number_format($row['RATE'],2);
+        echo '<span itemprop="minValue" content="'.$apr.'" >';
+				echo $apr;
+        echo '</span>';
 
 			}
 
@@ -163,7 +168,8 @@
 
 ?>%
  APR</p>
-<p class="subrate">Auto Loan Rate</p>
+ </span>
+<p class="subrate" itemprop="name" >Auto Loan Rate</p>
 <p class="subrate">Some restrictions may apply.<br />With approved credit.</p>
 
 </div><!--/ pods-none-auto-rate-341 -->
