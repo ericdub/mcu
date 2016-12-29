@@ -44,10 +44,11 @@ if (is_front_page ()) {
 	    $links = array("http://missouricu.org/health-savings-accounts",
 	    "http://missouricu.org/emv-chip-cards", "http://missouricu.org/e-alerts-bank-notifications/"
 		);
-		$alt = array("Health Savings Account image", "EMV Chip card image", "E Alert image");
+		$alt = array("Health Savings Account image", "EMV Chip card image", "E Alerts image");
 	    $randomNumber = rand(0, (count($images) - 1));
 
-	    echo '<a href="'. $links[$randomNumber].'"><div class="home-banner"><img src="' . $images[$randomNumber] . '" alt="'.$alt[$randomNumber].'"></div></a>';
+	    echo '<a href="'. $links[$randomNumber].'" onClick="ga(\'send\', \'event\', \'HomepageBanner\', \'click\', \''.$alt[$randomNumber].'\');">
+			<div class="home-banner"><img src="' . $images[$randomNumber] . '" alt="'.$alt[$randomNumber].'"></div></a>';
 	}
 
 
