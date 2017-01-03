@@ -47,7 +47,7 @@ if (is_front_page ()) {
 		$alt = array("Health Savings Account image", "EMV Chip card image", "E Alerts image");
 	    $randomNumber = rand(0, (count($images) - 1));
 
-	    echo '<a href="'. $links[$randomNumber].'" onclick="__gaTracker(\'send\', \'event\', \'HomepageBanner\', \'click\', \''.$alt[$randomNumber].'\');"">
+	    echo '<a href="'. $links[$randomNumber].'" onclick="__gaTracker(\'send\', \'event\', \'HomepageBanner\', \'click\', \''.$alt[$randomNumber].'\');">
 			<div class="home-banner"><img src="' . $images[$randomNumber] . '" alt="'.$alt[$randomNumber].'"></div></a>';
 	}
 
