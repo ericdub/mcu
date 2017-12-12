@@ -23,9 +23,6 @@
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
 
-
-
-
 <?php wp_head(); ?>
 
 </head>
