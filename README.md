@@ -1,4 +1,4 @@
-#MCU Wordpress Theme#
+# MCU Wordpress Theme
 
 Conversion of a lousy proprietary CMS to Wordpress. Based on the Underscores. There are some custom fields and post types.
 
